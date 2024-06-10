@@ -3,7 +3,7 @@ CreateThread(function()
 
     local resourceName = GetCurrentResourceName()
     local currentVersion = GetResourceMetadata(resourceName, 'version', 0)
-    local apiUrl = 'https://api.github.com/repos/T3rius/t3_winemakerjob/releases/latest'
+    local apiUrl = 'https://api.github.com/repos/T3rius/t3_discord/releases/latest'
 
     PerformHttpRequest(apiUrl, function(errorCode, resultData, resultHeaders)
         if errorCode ~= 200 then
